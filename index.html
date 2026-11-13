@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0b5ed7">
+  <title>Liderando Futuro | Oportunidades para jóvenes y pequeños emprendedores</title>
+  <meta name="description" content="Liderando Futuro es un partido político que propone soluciones económicas concretas: empleo para estudiantes, ingresos con habilidades, educación financiera y apoyo a pequeños emprendedores.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16" cy="13.5" r="1.2"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6.5v11M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.9-2.5.9-2.5 1.9 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M17 3l4 4-4 4M21 7H8M7 21l-4-4 4-4M3 17h13"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M17 14c2.8 0 4.5 1.8 4.5 4.5"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-filecheck" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6zM14 3v5h5M9 14l2 2 4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9v11h16V9M3 9l1.5-5h15L21 9M3 9c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24"><path d="M3 20h18M5 16l5-5 4 4 6-7M16 8h4v4"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M21 16l-5-5-8 8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="#inicio">
+        <img src="assets/logo-320.webp" alt="" width="44" height="44">
+        <span>Liderando Futuro</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
+        <button class="menu-button" type="button" popovertarget="site-menu" popovertargetaction="toggle" aria-controls="site-menu">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+          <span>Menú</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#problema">El problema</a></li>
+          <li><a href="#propuestas">Propuestas</a></li>
+          <li><a href="#ideas-nuevas">Ideas nuevas</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a class="nav-cta" href="#unete">Únete</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Partido político juvenil</p>
+          <h1 id="hero-title">Liderando <span>Futuro</span></h1>
+          <p class="lead">Reconocer los problemas y actuar con responsabilidad. Proponemos soluciones económicas concretas para que los jóvenes tengan más oportunidades y los pequeños emprendedores crezcan.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#propuestas">Conoce nuestras propuestas</a>
+            <a class="btn btn-secondary" href="#unete">Únete</a>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <img src="assets/logo-640.webp" alt="Logo de Liderando Futuro: una persona subiendo una escalera de barras ascendentes dentro de un círculo azul" width="480" height="480" fetchpriority="high">
+        </div>
+      </div>
+      <div class="stairs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="section" id="quienes-somos" aria-labelledby="quienes-title">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2 id="quienes-title">Por qué nos llamamos Liderando Futuro</h2>
+          <p>Creemos que el desarrollo de un país comienza con la capacidad de reconocer sus problemas y actuar responsablemente para transformarlos.</p>
+          <div class="meaning-grid">
+            <article class="meaning">
+              <h3>Liderando</h3>
+              <p>Es nuestra iniciativa para proponer soluciones económicas concretas, asumir responsabilidades y trabajar de manera colaborativa. El liderazgo no se demuestra con promesas grandiosas, sino con acciones planificadas y resultados verificables.</p>
+            </article>
+            <article class="meaning">
+              <h3>Futuro</h3>
+              <p>Es nuestra visión de un Perú que genere más oportunidades para sus jóvenes, fortalezca a sus pequeños emprendedores y aproveche el conocimiento y la tecnología para mejorar su productividad.</p>
+            </article>
+          </div>
+        </div>
+        <!-- IMAGEN PENDIENTE
+             Archivo sugerido: assets/img/equipo.webp
+             Tamaño recomendado: 1200 x 900 px (4:3)
+             Alt sugerido: "Integrantes de Liderando Futuro en el instituto"
+             Para completarlo, reemplaza el contenido de este <figure> por un <img> con ese alt y quita aria-hidden. -->
+        <figure class="img-slot ratio-4-3" aria-hidden="true">
+          <svg class="icon" aria-hidden="true"><use href="#i-image"/></svg>
+          <span>Imagen pendiente: foto del equipo o del instituto</span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="problema" aria-labelledby="problema-title">
+      <div class="wrap">
+        <p class="eyebrow">El problema en cifras</p>
+        <h2 id="problema-title">Muchas empresas, poca formalidad</h2>
+        <p class="section-intro">Según el informe del Comité Multidisciplinario sobre Informalidad Productiva de CEPLAN, publicado el 25 de septiembre de 2026:</p>
+
+        <ul class="stats">
+          <li class="stat">
+            <p class="stat-num"><span class="count" data-count="99.7" data-decimals="1">99,7</span><span class="unit">%</span></p>
+            <p class="stat-label">de las empresas son micro y pequeñas empresas (MYPE).</p>
+          </li>
+          <li class="stat">
+            <p class="stat-num"><span class="count" data-count="45.2" data-decimals="1">45,2</span><span class="unit">%</span></p>
+            <p class="stat-label">de la población económicamente activa trabaja en una MYPE.</p>
+          </li>
+          <li class="stat">
+            <p class="stat-num"><span class="count" data-count="86.8" data-decimals="1">86,8</span><span class="unit">%</span></p>
+            <p class="stat-label">de estas empresas opera en condiciones de informalidad.</p>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Tres problemas que queremos atender</h3>
+        <div class="cards three">
+          <article class="card">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-user"/></svg>
+            <h4>Empleo juvenil</h4>
+            <p>Muchos jóvenes tienen dificultades para conseguir su primer trabajo formal por la falta de experiencia.</p>
+          </article>
+          <article class="card">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-store"/></svg>
+            <h4>Informalidad y baja productividad</h4>
+            <p>Numerosos pequeños negocios no cuentan con suficiente capacitación, tecnología o facilidades para formalizarse.</p>
+          </article>
+          <article class="card">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-growth"/></svg>
+            <h4>Pocas oportunidades de crecimiento</h4>
+            <p>Las personas pueden tener conocimientos y buenas ideas de negocio, pero carecer de capital, orientación o acceso a mercados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="propuestas" aria-labelledby="propuestas-title">
+      <div class="wrap">
+        <p class="eyebrow">Nuestras propuestas</p>
+        <h2 id="propuestas-title">Cinco propuestas viables para empezar ya</h2>
+        <p class="section-intro">Pueden iniciar con convenios y canales digitales, sin construir oficinas nuevas ni prometer que todos conseguirán empleo.</p>
+
+        <div class="proposals">
+          <article class="proposal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-briefcase"/></svg>
+            <h3>Bolsa de oportunidades laborales para estudiantes</h3>
+            <p>Convenios entre institutos y empresas para difundir vacantes de medio tiempo compatibles con los horarios de estudio, prácticas formativas y puestos para personas sin experiencia.</p>
+            <details>
+              <summary>Ver cómo funcionaría</summary>
+              <dl>
+                <dt>¿Qué haríamos concretamente?</dt>
+                <dd>Solicitar que cada instituto tenga un espacio físico o virtual actualizado con oportunidades verificadas, requisitos claros y enlaces de postulación.</dd>
+                <dt>¿Por qué es viable?</dt>
+                <dd>Puede empezar con convenios y canales digitales, sin construir oficinas nuevas ni prometer que todos conseguirán empleo.</dd>
+                <dt>Beneficio económico</dt>
+                <dd>Facilita que los estudiantes generen ingresos y adquieran experiencia.</dd>
+              </dl>
+            </details>
+          </article>
+
+          <article class="proposal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-wallet"/></svg>
+            <h3>Jóvenes que generan ingresos con sus habilidades</h3>
+            <p>Promover que los estudiantes ofrezcan servicios relacionados con lo que estudian: diseño gráfico, publicidad para redes sociales, apoyo administrativo, reparación de equipos o producción de material educativo.</p>
+            <details>
+              <summary>Ver cómo funcionaría</summary>
+              <dl>
+                <dt>¿Qué haríamos concretamente?</dt>
+                <dd>Organizar una feria de servicios estudiantiles donde pequeños negocios puedan conocer el trabajo de los estudiantes y contratarlos por servicios definidos y remunerados.</dd>
+                <dt>¿Cómo se financiaría?</dt>
+                <dd>Con espacios del instituto, herramientas disponibles y coordinación con comercios locales.</dd>
+                <dt>Beneficio económico</dt>
+                <dd>Los jóvenes pueden obtener ingresos sin esperar a terminar la carrera, mientras los negocios acceden a servicios que necesitan.</dd>
+              </dl>
+            </details>
+          </article>
+
+          <article class="proposal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-coin"/></svg>
+            <h3>Educación financiera para jóvenes</h3>
+            <p>Talleres prácticos sobre cómo administrar el dinero, ahorrar, comparar créditos, evitar estafas financieras y elaborar un presupuesto personal.</p>
+            <details>
+              <summary>Ver cómo funcionaría</summary>
+              <dl>
+                <dt>¿Qué haríamos concretamente?</dt>
+                <dd>Coordinar charlas con docentes y especialistas, y elaborar materiales sencillos para que los estudiantes aprendan a organizar sus ingresos y gastos.</dd>
+                <dt>¿Cómo se financiaría?</dt>
+                <dd>Priorizando materiales digitales y alianzas educativas, con costos previamente definidos.</dd>
+                <dt>Beneficio económico</dt>
+                <dd>Ayuda a tomar decisiones financieras responsables y a evitar el sobreendeudamiento.</dd>
+              </dl>
+            </details>
+          </article>
+
+          <article class="proposal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-swap"/></svg>
+            <h3>Intercambio y reutilización de materiales de estudio</h3>
+            <p>Ferias de intercambio y venta de libros, uniformes, calculadoras y materiales de segunda mano en buen estado.</p>
+            <details>
+              <summary>Ver cómo funcionaría</summary>
+              <dl>
+                <dt>¿Qué haríamos concretamente?</dt>
+                <dd>Establecer un espacio periódico en el instituto donde los estudiantes puedan vender, comprar o intercambiar materiales a precios acordados entre ellos.</dd>
+                <dt>¿Cómo se financiaría?</dt>
+                <dd>Con coordinación institucional y recursos básicos disponibles.</dd>
+                <dt>Beneficio económico</dt>
+                <dd>Reduce los gastos de estudio de los estudiantes y fomenta la reutilización, sin necesidad de entregar subsidios.</dd>
+              </dl>
+            </details>
+          </article>
+
+          <article class="proposal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-users"/></svg>
+            <h3>Banco de talentos juveniles</h3>
+            <p>Un directorio donde pequeños negocios puedan encontrar estudiantes que ofrezcan servicios de diseño, programación, publicidad, contabilidad u otras especialidades.</p>
+            <details>
+              <summary>Ver cómo funcionaría</summary>
+              <dl>
+                <dt>¿Qué tiene de novedoso?</dt>
+                <dd>Conecta directamente el conocimiento adquirido en los institutos con necesidades reales del mercado.</dd>
+                <dt>¿Cómo se aplica?</dt>
+                <dd>Con un formulario digital, un catálogo de portafolios y acuerdos claros sobre pagos, plazos y entregables.</dd>
+              </dl>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="ideas-nuevas" aria-labelledby="ideas-title">
+      <div class="wrap">
+        <p class="eyebrow">Ideas nuevas</p>
+        <h2 id="ideas-title">Más acciones que complementan nuestras propuestas</h2>
+        <p class="section-intro">Medimos lo que prometemos, orientamos a los emprendedores y ayudamos a cada joven a hacer cuentas claras.</p>
+
+        <h3 class="subhead">Hoja de ruta del primer año</h3>
+        <div class="roadmap-layout">
+          <ol class="roadmap">
+            <li>
+              <span class="phase">Meses 0 a 3</span>
+              <h4>Convenios y canales digitales</h4>
+              <p>Firmar los primeros convenios con empresas e institutos y abrir la bolsa de oportunidades y el formulario del banco de talentos.</p>
+            </li>
+            <li>
+              <span class="phase">Meses 3 a 6</span>
+              <h4>Primera feria y talleres</h4>
+              <p>Realizar la primera feria de servicios estudiantiles, el primer intercambio de materiales y los talleres de educación financiera.</p>
+            </li>
+            <li>
+              <span class="phase">Meses 6 a 12</span>
+              <h4>Banco de talentos y evaluación</h4>
+              <p>Publicar el catálogo de portafolios, medir resultados y ajustar lo que no funcione.</p>
+            </li>
+          </ol>
+          <!-- IMAGEN PENDIENTE
+               Archivo sugerido: assets/img/feria-servicios.webp
+               Tamaño recomendado: 1200 x 675 px (16:9)
+               Alt sugerido: "Estudiantes ofreciendo sus servicios en una feria del instituto"
+               Para completarlo, reemplaza el contenido de este <figure> por un <img> con ese alt y quita aria-hidden. -->
+          <figure class="img-slot ratio-16-9" aria-hidden="true">
+            <svg class="icon" aria-hidden="true"><use href="#i-image"/></svg>
+            <span>Imagen pendiente: foto de una feria de servicios estudiantiles</span>
+          </figure>
+        </div>
+
+        <h3 class="subhead">Metas del primer año</h3>
+        <p class="note">Ejemplos de metas medibles. Se ajustarán con cada instituto y se publicarán los avances.</p>
+        <dl class="goals">
+          <div class="goal"><dt>Vacantes verificadas publicadas</dt><dd><span class="count" data-count="120" data-decimals="0">120</span></dd></div>
+          <div class="goal"><dt>Convenios con empresas</dt><dd><span class="count" data-count="10" data-decimals="0">10</span></dd></div>
+          <div class="goal"><dt>Talleres de educación financiera</dt><dd><span class="count" data-count="12" data-decimals="0">12</span></dd></div>
+          <div class="goal"><dt>Ferias de servicios e intercambio</dt><dd><span class="count" data-count="4" data-decimals="0">4</span></dd></div>
+        </dl>
+
+        <div class="cards two">
+          <article class="card">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-bulb"/></svg>
+            <h3>Mentoría de emprendedores locales</h3>
+            <p>Dueños de negocios formales orientan a estudiantes con ideas propias sobre cómo empezar, fijar precios y formalizarse. Funciona con tiempo voluntario y espacios del instituto, sin costo para el Estado.</p>
+          </article>
+          <article class="card">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-filecheck"/></svg>
+            <h3>Ruta simple para formalizar un negocio</h3>
+            <p>Una guía en lenguaje claro que responde a la informalidad del 86,8 % de las MYPE. Pasos generales (verifica siempre los requisitos vigentes):</p>
+            <ol class="steps">
+              <li>Obtener el RUC en SUNAT.</li>
+              <li>Elegir un régimen tributario adecuado.</li>
+              <li>Tramitar la licencia de funcionamiento en la municipalidad.</li>
+              <li>Registrar a los trabajadores y emitir comprobantes de pago.</li>
+            </ol>
+          </article>
+        </div>
+
+        <h3 class="subhead" id="calc-title">Calculadora: ¿cuánto podrías ganar o ahorrar?</h3>
+        <form class="calc" id="calculadora" aria-labelledby="calc-title">
+          <div class="calc-fields">
+            <div class="field">
+              <label for="servicios">Servicios que ofrecerías al mes</label>
+              <input type="number" id="servicios" name="servicios" inputmode="numeric" min="0" max="100" step="1" value="4" required>
+            </div>
+            <div class="field">
+              <label for="precio">Precio promedio por servicio (S/)</label>
+              <input type="number" id="precio" name="precio" inputmode="decimal" min="0" max="5000" step="1" value="40" required>
+            </div>
+            <div class="field">
+              <label for="materiales">Materiales de segunda mano que comprarías por semestre</label>
+              <input type="number" id="materiales" name="materiales" inputmode="numeric" min="0" max="100" step="1" value="5" required>
+            </div>
+            <div class="field">
+              <label for="ahorro">Ahorro promedio por material (S/)</label>
+              <input type="number" id="ahorro" name="ahorro" inputmode="decimal" min="0" max="2000" step="1" value="25" required>
+            </div>
+          </div>
+          <div class="calc-results" role="status">
+            <p>Ingreso estimado por mes<strong><output id="res-ingreso" for="servicios precio">S/ 160</output></strong></p>
+            <p>Ahorro estimado por semestre<strong><output id="res-ahorro" for="materiales ahorro">S/ 125</output></strong></p>
+          </div>
+          <p class="note">Es un ejemplo ilustrativo con valores que puedes cambiar. No es una promesa de ingresos.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 id="faq-title">Lo que más nos preguntan</h2>
+        <div class="faq">
+          <details>
+            <summary>¿Prometen empleo para todos?</summary>
+            <p>No. Prometemos facilitar el acceso a oportunidades verificadas, con requisitos claros. Preferimos metas realistas y medibles antes que promesas grandiosas.</p>
+          </details>
+          <details>
+            <summary>¿Cómo se financian las propuestas?</summary>
+            <p>Empezamos con lo que ya existe: espacios de los institutos, herramientas disponibles, convenios con empresas y materiales digitales. Los costos se definen de antemano y se publican.</p>
+          </details>
+          <details>
+            <summary>¿Por qué empezar por los institutos?</summary>
+            <p>Porque ahí están jóvenes con conocimientos y ganas de trabajar, y cerca de negocios que necesitan sus servicios. Es el lugar donde más rápido se pueden ver resultados.</p>
+          </details>
+          <details>
+            <summary>¿Cómo puedo participar?</summary>
+            <p>Completa el formulario de la sección <a href="#unete">Únete</a>: puedes ser voluntario, ofrecer tus servicios o sumar tu negocio como aliado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-join" id="unete" aria-labelledby="unete-title">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow">Únete</p>
+          <h2 id="unete-title">Sé parte de Liderando Futuro</h2>
+          <p>Cuéntanos cómo quieres sumarte. Este formulario es una demostración: por ahora no envía tus datos a ningún lugar.</p>
+        </div>
+
+        <form class="join-form" id="form-unete" action="#" method="post" aria-labelledby="unete-title">
+          <div class="field">
+            <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="100" required>
+          </div>
+          <div class="field">
+            <label for="instituto">Instituto o negocio <span aria-hidden="true">*</span></label>
+            <input type="text" id="instituto" name="instituto" autocomplete="organization" maxlength="100" required>
+          </div>
+          <div class="field">
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" id="correo" name="correo" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" maxlength="120" required>
+          </div>
+          <fieldset class="field">
+            <legend>¿Cómo quieres participar?</legend>
+            <label class="choice"><input type="radio" name="interes" value="voluntario" checked> Como voluntario</label>
+            <label class="choice"><input type="radio" name="interes" value="servicios"> Ofreciendo mis servicios</label>
+            <label class="choice"><input type="radio" name="interes" value="negocio"> Como negocio aliado</label>
+          </fieldset>
+          <div class="field">
+            <label for="mensaje">Mensaje (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="3" maxlength="500"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Quiero unirme</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-320.webp" alt="Logo de Liderando Futuro" width="72" height="72" loading="lazy">
+        <p>Liderando Futuro</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <ul>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#propuestas">Propuestas</a></li>
+          <li><a href="#ideas-nuevas">Ideas nuevas</a></li>
+          <li><a href="#unete">Únete</a></li>
+        </ul>
+      </nav>
+      <div class="footer-note">
+        <p>Proyecto académico elaborado para un curso del instituto. Liderando Futuro es un partido político ficticio.</p>
+        <p>Fuente de las cifras: informe del Comité Multidisciplinario sobre Informalidad Productiva de CEPLAN, 25 de septiembre de 2026.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
