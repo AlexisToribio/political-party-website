@@ -439,8 +439,6 @@ img { max-inline-size: 100%; height: auto; }
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
 }
 
-.cards.two { margin-block-start: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
-
 .card, .proposal, .stat {
   padding: 1.5rem;
   background: var(--surface);
@@ -570,6 +568,7 @@ details:not([open])::details-content { block-size: 0; }
   margin: 0;
   padding: 0 0 0 1.5rem;
   border-inline-start: 4px solid var(--gold);
+  max-inline-size: 48rem;
 
   li { position: relative; padding-block-end: 1.75rem; }
   li:last-child { padding-block-end: 0; }
@@ -631,14 +630,6 @@ details:not([open])::details-content { block-size: 0; }
     color: var(--blue);
     font-variant-numeric: tabular-nums;
   }
-}
-
-.steps {
-  margin: 0;
-  padding-inline-start: 1.25rem;
-  color: var(--muted);
-
-  li + li { margin-block-start: 0.25rem; }
 }
 
 /* Formulario */
