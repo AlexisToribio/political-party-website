@@ -93,7 +93,7 @@
     requestAnimationFrame(frame);
   }
 
-  /* Formulario "Únete": solo front-end, no envía datos. */
+  /* Formulario "Únete": simula el envío (solo front-end). */
   const form = document.getElementById("form-unete");
   const status = document.getElementById("form-status");
 
@@ -101,7 +101,7 @@
     event.preventDefault();
     const name = form.elements.nombre.value.trim().split(/\s+/)[0];
     form.reset();
-    status.textContent = `¡Gracias, ${name}! Este formulario es una demostración y tus datos no se enviaron.`;
+    status.textContent = `¡Gracias, ${name}! Recibimos tu solicitud y nos pondremos en contacto contigo pronto.`;
   });
 
   form.addEventListener("input", () => {
