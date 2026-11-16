@@ -565,16 +565,6 @@ details:not([open])::details-content { block-size: 0; }
 }
 
 /* Hoja de ruta */
-.roadmap-layout {
-  display: grid;
-  gap: 2rem;
-  align-items: start;
-
-  @media (min-width: 52rem) {
-    grid-template-columns: 1.2fr 0.8fr;
-  }
-}
-
 .roadmap {
   list-style: none;
   margin: 0;
@@ -714,26 +704,6 @@ input:user-invalid, textarea:user-invalid { border-color: #d93025; }
   &:empty { display: none; }
 }
 
-/* Marcador para imágenes pendientes */
-.img-slot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin: 0;
-  padding: 1.5rem;
-  inline-size: 100%;
-  text-align: center;
-  font-weight: 600;
-  color: var(--blue);
-  background: linear-gradient(135deg, var(--soft), rgb(255 180 0 / 0.18));
-  border: 3px dashed var(--blue);
-  border-radius: var(--radius);
-
-  .icon { inline-size: 3rem; block-size: 3rem; }
-}
-
 .team-photo {
   margin: 0;
   inline-size: 100%;
@@ -746,8 +716,6 @@ input:user-invalid, textarea:user-invalid { border-color: #d93025; }
     object-fit: contain;
   }
 }
-
-.ratio-16-9 { aspect-ratio: 16 / 9; }
 
 /* Pie de página */
 .site-footer {
@@ -796,5 +764,4 @@ input:user-invalid, textarea:user-invalid { border-color: #d93025; }
 
 @media (forced-colors: active) {
   .stairs { display: none; }
-  .img-slot { border-color: CanvasText; }
 }
