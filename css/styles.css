@@ -734,7 +734,21 @@ input:user-invalid, textarea:user-invalid { border-color: #d93025; }
   .icon { inline-size: 3rem; block-size: 3rem; }
 }
 
-.ratio-4-3 { aspect-ratio: 4 / 3; }
+.team-photo {
+  margin: 0;
+  inline-size: 100%;
+
+  img {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+}
+
 .ratio-16-9 { aspect-ratio: 16 / 9; }
 
 /* Pie de página */
