@@ -19,7 +19,6 @@
     <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
     <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16" cy="13.5" r="1.2"/></symbol>
     <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6.5v11M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.9-2.5.9-2.5 1.9 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></symbol>
-    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M17 3l4 4-4 4M21 7H8M7 21l-4-4 4-4M3 17h13"/></symbol>
     <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M17 14c2.8 0 4.5 1.8 4.5 4.5"/></symbol>
     <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
     <symbol id="i-filecheck" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6zM14 3v5h5M9 14l2 2 4-4"/></symbol>
@@ -148,8 +147,7 @@
     <section class="section" id="propuestas" aria-labelledby="propuestas-title">
       <div class="wrap">
         <p class="eyebrow">Nuestras propuestas</p>
-        <h2 id="propuestas-title">Cinco propuestas viables para empezar ya</h2>
-        <p class="section-intro">Pueden iniciar con convenios y canales digitales, sin construir oficinas nuevas ni prometer que todos conseguirán empleo.</p>
+        <h2 id="propuestas-title">Cuatro propuestas viables para empezar ya</h2>
 
         <div class="proposals">
           <article class="proposal">
@@ -204,23 +202,6 @@
           </article>
 
           <article class="proposal">
-            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-swap"/></svg>
-            <h3>Intercambio y reutilización de materiales de estudio</h3>
-            <p>Ferias de intercambio y venta de libros, uniformes, calculadoras y materiales de segunda mano en buen estado.</p>
-            <details>
-              <summary>Ver cómo funcionaría</summary>
-              <dl>
-                <dt>¿Qué haríamos concretamente?</dt>
-                <dd>Establecer un espacio periódico en el instituto donde los estudiantes puedan vender, comprar o intercambiar materiales a precios acordados entre ellos.</dd>
-                <dt>¿Cómo se financiaría?</dt>
-                <dd>Con coordinación institucional y recursos básicos disponibles.</dd>
-                <dt>Beneficio económico</dt>
-                <dd>Reduce los gastos de estudio de los estudiantes y fomenta la reutilización, sin necesidad de entregar subsidios.</dd>
-              </dl>
-            </details>
-          </article>
-
-          <article class="proposal">
             <svg class="icon icon-lg" aria-hidden="true"><use href="#i-users"/></svg>
             <h3>Banco de talentos juveniles</h3>
             <p>Un directorio donde pequeños negocios puedan encontrar estudiantes que ofrezcan servicios de diseño, programación, publicidad, contabilidad u otras especialidades.</p>
@@ -255,7 +236,7 @@
             <li>
               <span class="phase">Meses 3 a 6</span>
               <h4>Primera feria y talleres</h4>
-              <p>Realizar la primera feria de servicios estudiantiles, el primer intercambio de materiales y los talleres de educación financiera.</p>
+              <p>Realizar la primera feria de servicios estudiantiles y los talleres de educación financiera.</p>
             </li>
             <li>
               <span class="phase">Meses 6 a 12</span>
@@ -280,7 +261,7 @@
           <div class="goal"><dt>Vacantes verificadas publicadas</dt><dd><span class="count" data-count="120" data-decimals="0">120</span></dd></div>
           <div class="goal"><dt>Convenios con empresas</dt><dd><span class="count" data-count="10" data-decimals="0">10</span></dd></div>
           <div class="goal"><dt>Talleres de educación financiera</dt><dd><span class="count" data-count="12" data-decimals="0">12</span></dd></div>
-          <div class="goal"><dt>Ferias de servicios e intercambio</dt><dd><span class="count" data-count="4" data-decimals="0">4</span></dd></div>
+          <div class="goal"><dt>Ferias de servicios estudiantiles</dt><dd><span class="count" data-count="4" data-decimals="0">4</span></dd></div>
         </dl>
 
         <div class="cards two">
@@ -301,33 +282,6 @@
             </ol>
           </article>
         </div>
-
-        <h3 class="subhead" id="calc-title">Calculadora: ¿cuánto podrías ganar o ahorrar?</h3>
-        <form class="calc" id="calculadora" aria-labelledby="calc-title">
-          <div class="calc-fields">
-            <div class="field">
-              <label for="servicios">Servicios que ofrecerías al mes</label>
-              <input type="number" id="servicios" name="servicios" inputmode="numeric" min="0" max="100" step="1" value="4" required>
-            </div>
-            <div class="field">
-              <label for="precio">Precio promedio por servicio (S/)</label>
-              <input type="number" id="precio" name="precio" inputmode="decimal" min="0" max="5000" step="1" value="40" required>
-            </div>
-            <div class="field">
-              <label for="materiales">Materiales de segunda mano que comprarías por semestre</label>
-              <input type="number" id="materiales" name="materiales" inputmode="numeric" min="0" max="100" step="1" value="5" required>
-            </div>
-            <div class="field">
-              <label for="ahorro">Ahorro promedio por material (S/)</label>
-              <input type="number" id="ahorro" name="ahorro" inputmode="decimal" min="0" max="2000" step="1" value="25" required>
-            </div>
-          </div>
-          <div class="calc-results" role="status">
-            <p>Ingreso estimado por mes<strong><output id="res-ingreso" for="servicios precio">S/ 160</output></strong></p>
-            <p>Ahorro estimado por semestre<strong><output id="res-ahorro" for="materiales ahorro">S/ 125</output></strong></p>
-          </div>
-          <p class="note">Es un ejemplo ilustrativo con valores que puedes cambiar. No es una promesa de ingresos.</p>
-        </form>
       </div>
     </section>
 

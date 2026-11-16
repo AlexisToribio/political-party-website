@@ -484,7 +484,7 @@ img { max-inline-size: 100%; height: auto; }
   display: grid;
   gap: 1.25rem;
   margin-block-start: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
 }
 
 .proposal {
@@ -651,19 +651,13 @@ details:not([open])::details-content { block-size: 0; }
   li + li { margin-block-start: 0.25rem; }
 }
 
-/* Calculadora y formulario */
-.calc, .join-form {
+/* Formulario */
+.join-form {
   padding: clamp(1.25rem, 3vw, 2rem);
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-}
-
-.calc-fields {
-  display: grid;
-  gap: 1rem 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
 }
 
 .field {
@@ -678,8 +672,6 @@ details:not([open])::details-content { block-size: 0; }
 
   label, legend { font-weight: 600; padding: 0; }
 }
-
-.calc-fields .field { margin: 0; }
 
 input[type="text"], input[type="email"], input[type="number"], textarea {
   inline-size: 100%;
@@ -706,30 +698,6 @@ input:user-invalid, textarea:user-invalid { border-color: #d93025; }
   cursor: pointer;
 
   input { inline-size: 1.25rem; block-size: 1.25rem; }
-}
-
-.calc-results {
-  display: grid;
-  gap: 1rem;
-  margin-block: 1.5rem 0.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
-
-  p {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 1rem 1.25rem;
-    background: var(--soft);
-    border-inline-start: 6px solid var(--gold);
-    border-radius: 0.75rem;
-  }
-
-  strong {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    line-height: 1.2;
-    color: var(--blue);
-  }
 }
 
 .section-join {

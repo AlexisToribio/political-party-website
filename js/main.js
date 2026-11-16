@@ -93,24 +93,6 @@
     requestAnimationFrame(frame);
   }
 
-  /* Calculadora ilustrativa. */
-  const calc = document.getElementById("calculadora");
-  const money = new Intl.NumberFormat("es-PE", {
-    style: "currency",
-    currency: "PEN",
-    maximumFractionDigits: 0,
-  });
-
-  function updateCalc() {
-    const value = (id) => Math.max(Number(calc.elements[id].value) || 0, 0);
-    document.getElementById("res-ingreso").value = money.format(value("servicios") * value("precio"));
-    document.getElementById("res-ahorro").value = money.format(value("materiales") * value("ahorro"));
-  }
-
-  calc.addEventListener("input", updateCalc);
-  calc.addEventListener("submit", (event) => event.preventDefault());
-  updateCalc();
-
   /* Formulario "Únete": solo front-end, no envía datos. */
   const form = document.getElementById("form-unete");
   const status = document.getElementById("form-status");
