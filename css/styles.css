@@ -743,9 +743,7 @@ input:user-invalid, textarea:user-invalid { border-color: #d93025; }
     inline-size: 100%;
     block-size: auto;
     aspect-ratio: 3 / 2;
-    object-fit: cover;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    object-fit: contain;
   }
 }
 
